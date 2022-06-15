@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  height: 800px;
+  background-color: lightgreen;
+  margin: 50px auto;
+}
+
+.road {
+  width: 600px;
+  height: 800px;
+  margin: 0 auto;
+  background-image: url("../assets/road-600.png");
+  animation: animateRoad 0.8s linear infinite;
+  position: relative;
+}
+
+@keyframes animateRoad {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 300px;
+  }
+}
+
+.my-car {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
